@@ -46,8 +46,6 @@ void main() {
         printf("\n");
 
         pc_turn(pc_choice);
-        strcpy(pc_choice, "PAPER");
-
 
         gets(human_choice);
         upper(human_choice);
