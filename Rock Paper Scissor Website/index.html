@@ -1,0 +1,85 @@
+<!-- THIS CODE WAS CREATED BY SMAZY0210 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ===============================  NAV BAR  =============================== -->
+    <div class="nav">
+      <div class="container">
+        <div class="obj1">
+          <span class="nav-item">Round: </span><span id="round">1</span>
+        </div>
+        <div class="obj2">
+          <span class="nav-item">PC score: </span><span id="pcscr">0</span>
+        </div>
+        <div class="obj3">
+          <span class="nav-item">Round draw: </span><span id="draw">0</span>
+        </div>
+        <div class="obj4">
+          <span class="nav-item" id="username">Player's score: </span
+          ><span id="plrscr">0</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===============================  BODY  =============================== -->
+    <div class="body">
+      <div class="container">
+        <p class="ques">What do you chose?</p>
+        <div class="its">
+          <p>Rock <img src="img/rock.png" class="icons" alt="rock" /></p>
+          <p>Paper <img src="img/paper.png" class="icons" alt="paper" /></p>
+          <p>
+            Scissors <img src="img/scissors.png" class="icons" alt="scissors" />
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===============================  RESULTS  =============================== -->
+    <br /><br />
+    <div class="result">
+      <div class="container"><span id="RoundResult">Round Started</span></div>
+    </div>
+
+    <!-- ===============================  ANIMATION =============================== -->
+    <div class="animations">
+      <div class="container small">
+        <div class="item0"></div>
+        <div class="item1">
+          <img class="big-icons" id="plr" src="img/rock.png" alt="Player" />
+        </div>
+        <!-- <div class="item2"></div> -->
+        <div class="item1">
+          <img class="big-icons" id="pc" src="img/rock-reversed.png" alt="PC" />
+        </div>
+      </div>
+    </div>
+    <!-- ===============================  OPTIONS  =============================== -->
+    <div id="options">
+      <div class="container">
+        <button onclick="game(this.id)" id="ROCK" class="option">
+          <span class="z1">ROCK</span>
+        </button>
+        <button onclick="game(this.id)" id="PAPER" class="option">
+          <span class="z1">PAPER</span>
+        </button>
+        <button onclick="game(this.id)" id="SCISSOR" class="option">
+          <span class="z1">SCISSORS</span>
+        </button>
+        <button onclick="end()" id="QUIT" class="option">
+          <span class="z1">QUIT</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- ===============================  SCRIPTS  =============================== -->
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
